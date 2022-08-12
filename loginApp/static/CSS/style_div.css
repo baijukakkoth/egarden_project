@@ -1,0 +1,103 @@
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 4px;
+                font-size: large;
+                box-sizing: border-box;
+                }
+            
+            input[type=password], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 4px;
+                font-size: large;
+                box-sizing: border-box;
+                }
+            
+           
+            input[type=button] {
+                width: 100%;
+                background-color: white;
+                color: rgb(245, 63, 63);
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                font-size: large;
+                cursor: pointer;
+                width: 8em;  height: 3em;
+                }
+           
+            input[type=button]     
+            {opacity: 0.7;}
+
+            input[type=button]:hover
+            {opacity: 1;}
+            
+            #div_main{
+                width: 100%;
+                border-radius: 5px;
+                background-color:white;
+                
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 14px;
+                /* margin-bottom: 30px; */
+                color: rgb(51, 188, 62);
+                text-align: left;
+                font-size: xx-large;
+                                     
+                }
+
+
+            #div_head{background-color:white;
+                /* height: 100%; */
+                /* width: 100%; */
+                text-align: right;
+                padding: 9px;padding-right: 50px;
+
+
+                }
+
+
+              #div_image{
+                display: inline;
+                height: 500px;
+                width: 600px;
+                padding-top: 270px;
+                border: 2px solid;
+                
+                 padding-left:2px ;
+                } 
+             
+            img1{    
+                padding-left: 100px;
+                /* margin-top: 100px; */
+                width: 100px;
+                           
+            }
+
+
+            img.slide{
+                height: 580px;
+                
+            }
+            .anyClass {
+                height:150px;
+                overflow-y: scroll;
+              }
+
+            /* .card-body_trendy {
+                min-height: 300px;
+                min-width: 500px;
+                margin-right: 5px;
+            } */
+
+            /* card.trendy{
+                width: 18rem;
+            } */

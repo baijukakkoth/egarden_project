@@ -1,0 +1,354 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href= "{% static 'css/style_div.css' %}"> 
+    <link  rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link  rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery/custom.js"></script>
+    <title>Head</title>
+</head>
+<body>
+  <header style="">
+    <div id="div_main">
+        <table width="100%" cellspacing="0" >
+            <tr>
+                <th  style="padding-left:200px ;">E-Garden<span style="color:rgba(82, 81, 81, 0.578) ;">Online</span></th>
+                <th style="font-size:15px ; text-align: center; padding-right: 10px;"> Plants</th>
+                <th style="font-size:15px ;text-align: center; padding-right: 10px;"> Track Order</th>
+                <th style="font-size:15px ;text-align: center; padding-left: 10px;"> Plant Care</th>
+                <th style="font-size:15px ;text-align: center; padding-left: 10px;"> Offers</th>
+                <th>
+                    <div id="div_head" >
+                       <img src="{% static 'images\social_logo1.png' %}" width="100px" height="50px">
+                    </div> 
+                </th>
+            </tr>
+        </table>
+        <hr>
+        <div style="width: 100%;padding: 0.1px;background: rgb(255, 255, 255);"> 
+        </div>
+    </div>
+
+<!-- Search area -->
+    <div>
+         <nav style="padding-left:200px ;" class="navbar bg-light">
+            <div class="container-fluid">
+                <form class="d-flex" role="search">
+                <input style=" width: 1050px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button style="margin-left:35px ; width: 100px;" class="btn btn-success" type="submit">Login</button>
+              </form>
+            </div>
+        </nav>
+    </div>
+    <hr>
+  </header>
+<!-- Carousel home page -->
+    <div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button> 
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img style="padding-left: 200px; padding-right: 200px;" src="\static\images\plants\carosel4.jpg" class="slide d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-1">Indoor Plants</h5>
+                  <p class="fs-5 color text-info">Indoor house plants not only improve the look of your home from the perspective of decor, but they also improve the overall mood and make the place more liveable..</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img style="padding-left: 200px; padding-right: 200px;"src="\static\images\plants\carosel6.jpg" class="slide d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-2 color text-warning">Burro's-Tail</h5>
+                  <p class="fs-5 color text-black-50">Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img style="padding-left: 200px; padding-right: 200px;"src="\static\images\plants\carosel2.jpg" class="slide d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="fs-2 color text-success">Zeebra Plant</h5>
+                  <p class="fs-5 color text-black-50">Keep an eye on the leaves so you can give this plant the love and care it needs to be saved.</p>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+
+            <button class="carousel-control-prev" type="button"       data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+            
+        </div>
+
+    </div>
+    <br><br><br>
+<!-- Order section -->
+  
+<h1 class="text-center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Order your plants now.....</h1>
+<br><br><br>
+<div class="container">
+    <!-- First Row -->
+    <div class="row">
+        <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="\static\images\plants\card9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Ivy Plant</h5>
+              <p class="card-text">English ivy (Hedera helix) is an evergreen perennial. </p>
+              <h3 class="fs-3 text-danger"> Rs.450/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.500/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="\static\images\plants\card3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title.</p>
+              <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="\static\images\plants\card2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title .</p>
+              <h3 style="" class="fs-3 text-danger"> Rs.350/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.400/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- 2nd Row  -->
+    <br><br>
+    <div class="row">
+        <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="\static\images\plants\card10.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fittonia Green Plant</h5>
+              <p class="card-text">Each leaf of Fittonia Green is perfectly shaped with vivid white veins.</p>
+              <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+            </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+              <img src="\static\images\plants\card11.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jade Plant Mini</h5>
+                <p class="card-text">Crassula Green Mini will be your dream plant kid. One of the easiest houseplants to look after. </p>
+                <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+              <img src="\static\images\plants\card12.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Money Plant Variegated</h5>
+                <p class="card-text">Money Plant is a beautiful variegations on glossy, heart shaped, green leaves. </p>
+                <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+              </div>
+          </div>
+        </div>
+    </div>
+    <br><br>
+    <!-- 3rd Row -->
+    <div class="row">
+    <br><br>
+
+        <div class="col-4">
+        <div class="card" style="width: 18rem;">
+            <img src="\static\images\plants\card15.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Philodendron Oxycardium </h5>
+              <p class="card-text">Philodendron Oxycardium Green can as well be called the original superstar of the plant world.</p>
+              <h3 style="" class="fs-3 text-danger"> Rs.350/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.400/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+              <img src="\static\images\plants\card13.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Peperomia Green Creeper</h5>
+                <p class="card-text"> Peperomia green creeper boasts of glossy green heart shaped leaves on thick trailing stems.</p>
+                <h3 style="" class="fs-3 text-danger"> Rs.230/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.340/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-4">
+            <div class="card" style="width: 18rem;">
+                <img src="\static\images\plants\card19.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">English Ivy Plant</h5>
+                  <p class="card-text">Growing English Ivy indoors is pure shaped leaves that are both glossy and fleshy</p>
+                  <h3 style="" class="fs-3 text-danger"> Rs.280/- </h3>
+              <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.330/-</h4>
+
+              <a class="btn btn-success" style="margin-top: 20px;" href="#" class="btn btn-primary">Add to Cart</a>
+              <a class="btn btn-success" style="margin-top: 20px;margin-left: 31px;" href="#" class="btn btn-primary">About Plant</a>
+            </div>
+            </div>
+          </div>
+    </div>
+    <br><br>
+</div> <!-- Order Container Closed-->
+<br> <br><br>
+   
+<!-- Trending Plants -->
+<h1 class="text-center" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;">Trending Plants you Like.........</h1>
+<br><br>
+<div style="width: 100%;height: 650px;background-color: #000000;padding: 1%;">
+  <section id="section1">
+    <div class="container">
+      <div class="row card-row">
+        <div class="wrapper-left">
+          <div class="card_wrap">
+            <div class="box">
+              <div class="box-inner">
+                <div class="icon">
+                  <i class="fas fa-home fa-2x"></i>
+                </div>
+                <img src="\static\images\plants\card10.png" class="card-img-top" alt="...">
+                <h4>Fittonia Green Plant</h4>
+                <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+                <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-inner">
+                <div class="icon">
+                  <i class="fas fa-home fa-2x"></i>
+                  <img src="\static\images\plants\card12.png" class="card-img-top" alt="...">
+                  <h5>Money Plant Variegated</h5>
+                  <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+                  <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+                  <h4>""  </h4>
+                </div>
+                
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-inner">
+                <div class="icon">
+                  <i class="fas fa-home fa-2x"></i>
+                </div>
+                <img src="\static\images\plants\card10.png" class="card-img-top" alt="...">
+                <h4>Fittonia Green Plant</h4>
+                <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+                <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+                
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-inner">
+                <div class="icon">
+                  <i class="fas fa-home fa-2x"></i>
+                </div>
+                <img src="\static\images\plants\card12.png" class="card-img-top" alt="...">
+                  <h5>Money Plant Variegated</h5>
+                  <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+                  <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+                  
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-inner">
+                <div class="icon">
+                  <i class="fas fa-home fa-2x"></i>
+                  <img src="\static\images\plants\card12.png" class="card-img-top" alt="...">
+                  <h5>Money Plant Variegated</h5>
+                  <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+                  <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+                  <h4>""  </h4>
+                </div>           
+              </div>
+            </div>
+            <div class="box">
+              <div class="box-inner">
+                <div class="icon">
+                  <i class="fas fa-home fa-2x"></i>
+                </div>
+                <img src="\static\images\plants\card12.png" class="card-img-top" alt="...">
+                  <h5>Money Plant Variegated</h5>
+                  <h3 style="" class="fs-3 text-danger"> Rs.550/- </h3>
+                  <h4  style="line-height:0.05px ;" class="fs-5 text-blak-50 text-decoration-line-through">Rs.700/-</h4>
+                  
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="wrapper-right">
+        </div>
+      </div>
+    </div>
+  </section>    
+</div> <!-- Close div of Tending plants-->
+
+<footer>
+  <p class="text-center">
+  All rights reserved @Baiju Kakkoth
+  </p>
+</footer>
+</body>
+</html>
